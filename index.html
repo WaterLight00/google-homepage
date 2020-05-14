@@ -1,29 +1,105 @@
-<html lang="eng" dir="ltr"  class=""?>  
+<html lang="eng" dir="ltr"  class=""?> 
+    <head>
+        <style>
+           ul {
+                list-style-type: none;
+                margin: 0px;
+                padding: 0px;
+                margin-top: 1%;
+            }
+            li {
+                display: inline;
+                text-align: center;
+                padding: 5px 3px;
+
+            }
+            #user-picture{
+                border-radius: 50%;
+                width: 35px;
+                height: 35px;
+            }
+            footer {
+                position: fixed;
+                bottom: 0px;
+                width: 100%;
+                background-color: rgb(241, 241, 241);
+                margin-left: -10px;
+                font-size: 14px;
+                color:rgb(100, 100, 100)
+            }
+            #Google-logo {
+                text-align: center;
+                margin: 10% 0 1.5% 0;
+            }
+            #Search-bar-container {
+                text-align: center;
+                margin-bottom: 1.5%;
+                
+            }
+            #Search-bar {
+                width: 35%;
+                height: 35px;
+                border-radius: 15px;
+                border: 0.5px rgb(189, 183, 183) solid;
+                background-image: url("https://img.icons8.com/material-sharp/24/000000/search.png");
+                background-repeat: no-repeat;
+                background-position: 5px 5px;
+                padding-left: 40px;
+
+            }
+            #buttons {
+                text-align: center;
+                border-radius: 10px;
+            }
+
+             #mic {
+                text-align: center;
+                margin: -50 0 25 450;
+
+            }
+
+            
+            button {
+                font-size: 15px;
+                padding: 10px 10px 10px 10px;
+                color: rgb(100, 100, 100);
+                background-color: rgb(241, 241, 241);
+                text-align: center;
+                border-radius: 3px;
+            }
+
+            
+        </style>
+    </head> 
     <body>
-        <header>
+        <header style="color: rgb(100, 100, 100);">
             <ul>
                 <li>About</li>
                 <li>Store</li>
-                <li>Gmail</li>
-                <li>Images</li>
-                <li>
-                     <!--An image of some square to mimimc the menu-->
-                    <img src="https://img.icons8.com/ios-glyphs/30/000000/circled-menu.png" alt="Menu icon">
-                </li>
-                <li>
+                <li style="float: right; margin: -8 0 0 0;">
                     <!--A small round image of someone or something-->
-                     <img src="imgs/20200403_153030.jpg" alt="Picture of the current user">
+                     <img src="imgs/20200403_153030.jpg" alt="Picture of the current user" id="user-picture">
                 </li>
+                <li style="float: right; margin: -5 0 0 0;">
+                    <!--An image of some square to mimimc the menu-->
+                   <img src="https://img.icons8.com/ios-glyphs/30/000000/circled-menu.png" alt="Menu icon">
+               </li>
+                <li style="float: right;">Gmail</li>
+                <li style="float: right;">Images</li>
+                
             </ul>
         </header>
-        <div>
+        <div id="Google-logo">
             <!--Google logo image will go here-->
             <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
         </div>
-        <div>
-            <input type="text" name="Search Bar" id="Search Bar" required>
+        <div id="Search-bar-container">
+            <input type="text" name="Search Bar" required id="Search-bar">
         </div>
-        <div>
+        <div id="mic">
+            <img src="https://img.icons8.com/material-sharp/24/000000/microphone.png" alt="image of microphone">
+        </div>
+        <div id="buttons">
             <li><button name="Google Search">Google Search</button></li>
             <li><button name="I`m Feeling Lucky">I`m Feeling Lucky</button></li>
         </div>
@@ -36,9 +112,10 @@
                 <li>Advertising</li>
                 <li>Business</li>
                 <li>How Search Works</li>
-                <li>Privacy</li>
-                <li>Terms</li>
-                <li>Settings</li>
+                <li style="float: right;">Settings</li>
+                <li style="float: right;">Terms</li>
+                <li style="float: right;">Privacy</li>
+                
             </ul>
         </footer>
 
